@@ -4,5 +4,6 @@
     "azureFunctions.projectRuntime": "~3",
     "debug.internalConsoleOptions": "neverOpen",
     "azureFunctions.preDeployTask": "publish",
-    "terminal.integrated.automationShell.windows": "C:\\Users\\boris.levenzon\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe"
+    "terminal.integrated.automationShell.windows": "C:\\Users\\boris.levenzon\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe",
+    "azure.tenant": "a5914003-88cc-41f9-ac9d-aea255ffedd8"
 }
