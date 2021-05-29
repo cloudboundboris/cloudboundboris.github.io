@@ -19,19 +19,19 @@ namespace Company.Function
     public static class GetResumeCounter
     {
         [FunctionName("GetResumeCounter")]
-        
+           
             public static HttpResponseMessage Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req, 
-            [CosmosDB(databaseName:"azureresumedb", collectionName: "counter", ConnectionStringSetting = "AzureResumeConnectionString", Id = "1", PartitionKey = "1")] Counter counternum,
-            [CosmosDB(databaseName:"azureresumedb", collectionName: "counter", ConnectionStringSetting = "AzureResumeConnectionString", Id = "1", PartitionKey = "1")] out Counter upcounternum,
+            [CosmosDB(databaseName:"azureresumedb", collectionName: "counter", ConnectionStringSetting = "AzureResumeConnectionString", Id = "1", PartitionKey = "1")] Counter counter,
+            [CosmosDB(databaseName:"azureresumedb", collectionName: "counter", ConnectionStringSetting = "AzureResumeConnectionString", Id = "1", PartitionKey = "1")] out Counter upcounter,
             ILogger log)
         {
             log.LogInformation("+++++ trigger function processed a request.");
             
-            upcounternum = counternum;
-            upcounternum.Count +=1;
+            upcounter = counter;
+            upcounter.Count +=1;
 
-            var jsonToReturn = JsonConvert.SerializeObject(counternum);
+            var jsonToReturn = JsonConvert.SerializeObject(counter);
               
             return new HttpResponseMessage(System.Net.HttpStatusCode.OK)
                {
