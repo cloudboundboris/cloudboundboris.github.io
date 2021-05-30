@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 
-const functionApi = 'https://acgazureresume.documents.azure.com:443/;AccountKey=GWF9njv8b19TI6M3mauyR24DewCrqLGn59yJRMTe7lM7HOmyJCcaSMpUfBQQmvbLOEFezhKZM5Abqpj1WY5Hog==;'; 
+const functionApi = 'AccountEndpoint=https://azureresumedb.documents.azure.com:443/;AccountKey=t0a2vuoNyRhFreDOFBaA4sGGN6P7BN5KEbB4dMYaVQgYPlBe20KbrLgEa1MCwyASaYar8rHW2VOSnEwB4B5kRA==;'; 
 
 const getVisitCount = () => {
     let count = 30;
