@@ -1,381 +1,354 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <title>Boris Levenzon | Resume</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Leven - Resume / CV / vCard Template" />
-    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, portfolio" />
-    <meta name="author" content="lmpixels" />
-    <link rel="shortcut icon" href="favicon.ico">
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
 
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Boris Levenzon Resume</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <link rel="stylesheet" href="css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <script src="js/modernizr.custom.js"></script>
-  </head>
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
 
-  <body class="page">
+   <!-- Script
+   ================================================== -->
+   <script src="js/modernizr.js"></script>
+   <script src="main.js"></script>
 
-    <div class="lm-animated-bg"></div>
-    
-    <!-- Loading animation -->
-    <div class="preloader">
-      <div class="preloader-animation">
-        <div class="preloader-spinner">
-        </div>
-      </div>
-    </div>
-    <!-- /Loading animation -->
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.ico" >
 
-    <!-- Scroll To Top Button -->
-    <div class="lmpixels-scroll-to-top"><i class="lnr lnr-chevron-up"></i></div>
-    <!-- /Scroll To Top Button -->
+</head>
 
-    <div class="page-scroll">
-      <div id="page_container" class="page-container bg-move-effect" data-animation="transition-flip-in-right">
+<body>
 
-        <!-- Header -->
-        <header id="site_header" class="header">
-          <div class="header-content clearfix">
-                
-            <!-- Text Logo -->
-            <div class="text-logo">
-              <a href="index.html">
-                <div class="logo-symbol">B</div>
-                <div class="logo-text">Boris <span>Levenzon</span></div>
-                
+   <!-- Header
+   ================================================== -->
+   <header id="home">
 
-              </a>
-            </div>
-            <!-- /Text Logo -->
+      <nav id="nav-wrap">
 
-            <!-- Navigation -->
-            <div class="site-nav mobile-menu-hide">
-              <ul class="leven-classic-menu site-main-menu">
-                <li class="menu-item menu-item-has-children current-menu-item">
-                  
-                </li>
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-                
-                
-                
-                
-                </li>
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+         </ul> <!-- end #nav -->
 
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">Hi, I am Boris</h1>
+            
+            <p>this page has been viewed <a id="counter"></a> times <b><-- coming to you via an Azure Function :)</b> </p> 
+            <ul class="social">
                
-              </ul>
-            </div>
-
-            <!-- Mobile Menu Toggle -->
-            <a class="menu-toggle mobile-visible">
-              <i class="fa fa-bars"></i>
-            </a>
-            <!-- Mobile Menu Toggle -->
-          </div>
-        </header>
-        <!-- /Header -->
-
-        <div id="main" class="site-main">
-          <div id="main-content" class="single-page-content">
-            <div id="primary" class="content-area">    
-              <div id="content" class="page-content site-content single-post" role="main">
-                <!-- Home Page Top Part -->
-                <div class="row">
-                  <div class=" col-xs-12 col-sm-12">
-                    <div class="home-content">
-                      <div class="row flex-v-align">
-                        
-                        <div class="col-sm-12 col-md-5 col-lg-5">
-                          <div class="home-photo">
-                            <div class="hp-inner" style="background-image: url(./img/mainphoto.jpg);">
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-sm-12 col-md-7 col-lg-7">
-                          <div class="home-text hp-left">
-                            <div class="owl-carousel text-rotation">                                    
-                              <div class="item">
-                                <h4>Cloud Enthusiast</h4>
-                              </div>
-
-                              <div class="item">
-                                <h4>IT Professional</h4>
-                              </div>
-                            </div>
-                              
-                            <h1>Boris Levenzon</h1>
-                            <p>viewed <a id="counter"></a> times :) </p> 
-                                 
-                            <div class="home-buttons">
-                              <a href="#" target="_blank" class="btn btn-primary">Download CV</a>
-                              <a href="#contactme" target="_self" class="btn btn-primary">Contact Me</a>
-                              <a href="#" target="_blank" class="btn btn-primary">About Me</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Home Page Top Part -->
-                 
-                <div class="row">
-                <div class="block-title">
-                      <h2>Work Experience</h2>
-                    </div>
-                  </div>
-                
-                 
-                <div class="row">
-                      <div class="info-block-w-icon">
-                        <div class="ci-icon">
-                          <i class="linecons linecons-display"></i>
-                        </div>
-                                              
-                          
-                        <div class="ci-text">
-                          <h4>IT Site Manager</h4>
-                          <p>International Vitamin Corporation</p>
-                          <p>April 2016 - Present</p>
-                        </div>
-                      </div>
-    
-                      <div class="info-block-w-icon">
-                        <div class="ci-icon">
-                          <i class="linecons linecons-display"></i>
-                        </div>
-     
-                        <div class="ci-text">
-                          <h4>Systems Administrator</h4>
-                          <p>PCI Pharmaceuticals Servces</p>
-                          <p>Jan 2015 - May 2016</p>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-               
-                    <div class="info-block-w-icon">
-                        <div class="ci-icon">
-                          <i class="linecons linecons-display"></i>
-                        </div>
-
-                        <div class="ci-text">
-                          <h4>Systems Engineer</h4>
-                          <p>VelocIT by DSi</p>
-                          <p>Feb 2013 - Feb 2014</p>
-                        </div>
-
-                      </div>
-                      <div class="info-block-w-icon">
-                        <div class="ci-icon">
-                          <i class="linecons linecons-display"></i>
-                        </div>
-     
-                        <div class="ci-text">
-                          <h4>Lead System Engineer</h4>
-                          <p>H2 Technology Partners</p>
-                          <p>Sep 2010 - Jan 2013</p>
-                        </div>
-                      </div>
-                     
-                      <div class="info-block-w-icon">
-                        <div class="ci-icon">
-                          <i class="linecons linecons-display"></i>
-                        </div>
-
-                        <div class="ci-text">
-                          <h4>System Administrator</h4>
-                          <p>Canon Solutions America</p>
-                          <p>Feb 2008 - Feb 2010</p>
-                        </div>
-                      </div>
-                      <div class="info-block-w-icon">
-                        <div class="ci-icon">
-                          <i class="linecons linecons-display"></i>
-                        </div>
-
-                        <div class="ci-text">
-                          <h4>System Specialist</h4>
-                          <p>GE Capital ITS</p>
-                          <p>Jan 1999 - Jan 2001</p>
-                        </div>
-                      </div>
-                      <div class="info-block-w-icon">
-                        <div class="ci-icon">
-                          <i class="linecons linecons-display"></i>
-                        </div>
-
-                        <div class="ci-text">
-                          <h4>Help Desk Technican</h4>
-                          <p>IBM Global Services @ Johnson & Johnson Logistics</p>
-                          <p>Jan 1997 - Jan 1999</p>
-                        </div>
-                      </div>
-                      <div class="info-block-w-icon">
-                        <div class="ci-icon">
-                          <i class="linecons linecons-display"></i>
-                        </div>
-
-                        <div class="ci-text">
-                          <h4>System Integrator</h4>
-                          <p>VC Solutions</p>
-                          <p>Jan 1995 - Jan 1997</p>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-                </div>
-                
-               
-
-                <div class="row">
-                  <div class="col-xs-12 col-sm-12">
-                    <div class="p-20"></div>
-
-                   
-                    <div class="p-40"></div>
-
-                    <!-- Clients Slider -->
-                    <div class="block-title">
-                      <h2>Some of my favorites</h2>
-                    </div>
-
-                    <div id="clients_1" class="clients owl-carousel" data-mobile-items="1" data-tablet-items="3" data-items="6">
-                      <div class="client-block">
-                        <a href="#" target="_blank" title="Golden Grid">
-                          <img src="./img/clients/client-1.png" alt="Golden Grid">
-                        </a>
-                      </div>
-
-                      <div class="client-block">
-                        <a href="#" target="_blank" title="Sweety">
-                          <img src="./img/clients/client-2.png" alt="Sweety">
-                        </a>
-                      </div>
-
-                      <div class="client-block">
-                        <a href="#" target="_blank" title="Magic Furnitures">
-                          <img src="./img/clients/client-3.png" alt="Magic Furnitures">
-                        </a>
-                      </div>
-
-                      <div class="client-block">
-                        <a href="#" target="_blank" title="LifeGuard">
-                          <img src="./img/clients/client-4.png" alt="LifeGuard">
-                        </a>
-                      </div>
-
-                      <div class="client-block">
-                        <a href="#" target="_blank" title="LESS">
-                          <img src="./img/clients/client-5.png" alt="LESS">
-                        </a>
-                      </div>
-
-                      <div class="client-block">
-                        <a href="#" target="_blank" title="Design Lovers">
-                          <img src="./img/clients/client-6.png" alt="Design Lovers">
-                        </a>
-                      </div>
-
-                      <div class="client-block">
-                        <a href="#" target="_blank" title="WordPress">
-                          <img src="./img/clients/client-7.png" alt="WordPress">
-                        </a>
-                      </div>
-                    </div>
-                    <!-- /Clients Slider -->
-
-                    <div class="p-40"></div>
-
-                  </div>
-                </div>
-                <div id="contactme"><a href="contactme"></a></div>
-                  
-                <div class="row">
-                  <div class="col-xs-12 col-sm-12">
-                    <div class="block-title">
-                      <h2>Contact Me</h2>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-xs-12 col-sm-1">
-                    
-                  </div>
-
-                  <div class="col-xs-12 col-sm-5">
-                      <div class="lm-info-block gray-default">
-                      <i class="linecons linecons-mail"></i>
-                      <h4>@email</h4>
-                      <span class="lm-info-block-value"><SPAN STYLE="font-size:8mm">blevenzon@gmail.com</SPAN>
-                      <span class="lm-info-block-text"></span>
-                      </div>
-                  </div>
-
-                  
-
-                  <div class="col-xs-12 col-sm-5 ">
-                    
-                    <div class="lm-info-block gray-default">
-                      <i class="linecons linecons-phone"></i>
-                      <h4>@phone</h4>
-                      <span class="lm-info-block-value"><SPAN STYLE="font-size:8mm">(267) 825-7121</SPAN> 
-                      <span class="lm-info-block-text"></span>
-                    
-                    </div>
-                  </div>
-                </div>
-              
-
-                
-
-        <!-- Footer -->
-        <footer class="site-footer clearfix">
-          <div class="footer-social">
-            <ul class="footer-social-links">
-              <li>
-                <a href="#" target="_blank">Twitter</a>
-              </li>
-
-              <li>
-                <a href="#" target="_blank">Facebook</a>
-              </li>
-
-              <li>
-                <a href="#" target="_blank">Instagram</a>
-              </li>
+             
+               <li><a href="https://www.linkedin.com/in/boris-levenzon"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/cloudboundboris"><i class="fa fa-github"></i></a></li>
             </ul>
-          </div>
-              
-          <div class="footer-copyrights">
-            <p>© 2021 All rights reserved. Boris Levenzon.</p>
-          </div>
-        </footer>
-        <!-- /Footer -->
-        
+         </div>
       </div>
-    </div>
 
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src='js/jquery.shuffle.min.js'></script>
-    <script src='js/masonry.pkgd.min.js'></script>
-    <script src='js/owl.carousel.min.js'></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
-    <script src="js/jquery.googlemap.js"></script>
-    <script src="js/validator.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="images/me.jpg" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>ABOUT ME</h2>
+
+            <b>Hi, I'm Boris Levenzon, an IT Professional, 20+ years with my feet firmly on the ground and my head in the <img src="./images/cloud-1.png" alt="Trulli" width="50" height="50"><img src="./images/cloud2.png" alt="Trulli" width="50" height="50"></b>
+         </br>
+      </br>
+       I built this page as part of the <span><a href="https://github.com/cloudboundboris/cloudboundboris.github.io">ACloud Guru Azure Resume Challenge as I begin to delve into DevOps and Serverless technologies.</a></span>
+            
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Certifications</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>MSCE</h3>
+                  <p class="info"><em class="date">January 2000</em></p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Oracle Cloud infrastructure Foundations Associate 2020</h3>
+                  <p class="info"><em class="date">July 2020</em></p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Wonderware System Platform 1</h3>
+                  <p class="info"><em class="date">April 2020</em></p>
+
+               </div>
+
+            </div> <!-- item end -->
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Wonderware System Platform 2</h3>
+                  <p class="info"><em class="date">April 2020</em></p>
+
+               </div>
+         </div>
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+
+      <!-- Work
+      ----------------------------------------------- -->
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>Work</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>International Vitamin Corporation</h3>
+                  <p class="info">IT Manager<span>&bull;</span> <em class="date">April 2016 - Present</em></p>
+
+                  <p>
+                  <li>Keeping the plant running</li> 
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>PCI Pharma Services</h3>
+                  <p class="info">Systems Administrator <span>&bull;</span> <em class="date">May 2019 - August 2020</em></p>
+
+                  <p>
+                     <li>Taking care of the Network infrastructure</li>
+                     <li>Brought a .NET application back from the dead</li>
+                     <li>Overhauled the wireless network via Juniper</li>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Dynamic Strategies Inc | VelocIT </h3>
+                  <p class="info">Systems Engineer <span>&bull;</span> <em class="date">September 2018 - May 2019</em></p>
+
+                  <p>
+                  <li>Responsible for multi client network monitoring</li>
+                  <li>Managing Cisco and Fortinet switching infrastructure</li>
+                  <li>Establishing Network infrastructure documentation</li>
+                  
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>H2 Tech Partners</h3>
+                  <p class="info">Lead Systems Engineer<span>&bull;</span> <em class="date">October 2016 - August 2018</em></p>
+
+                  <p>
+                  <li>Helping 30 client companies keeping their IT infrastructure running </li>
+                  <li>Desiging and improving existing IT infrastructure</li>
+                  <li>Worked on <a href="https://www.hudsondredging.com">Hundson River Dredging Remidation project</a>
+                  <li>Designed and implemented NLOS mesh network</li>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Canon Solutions America</h3>
+                  <p class="info">Systems Administrator <span>&bull;</span> <em class="date">December 2014 - August 2016</em></p>
+
+                  <p>
+                  <li>Responsible for on premise data center 50+ physical servers</li>
+                  <li>Saved the site $50,000 annualy by implementing first generation data-dup DataDomain backup and DR solution</li>
+                  <li>Testing and implementing early versions of VMWare</li>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>GE Capital ITs</h3>
+                  <p class="info">System Analyst <span>&bull;</span> <em class="date">December 2014 - August 2016</em></p>
+
+                  <p>
+                  <li>Migrating 700+ Desktops for the First Union and Wachovia Bank merger</li>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>IBM Global Services IT @ Johnson & Johnson sales and logistics center</h3>
+                  <p class="info">Help Desk <span>&bull;</span> <em class="date">December 2014 - August 2016</em></p>
+
+                  <p>
+                  <li>Repsonsible for break fix 735 workstations and 120 remote users</li>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>VC Solutions Inc</h3>
+                  <p class="info">System Integrator | Help Desk <span>&bull;</span> <em class="date">December 2014 - August 2016</em></p>
+
+                  <p>
+                  <li>Responsible for all IT infrastructure</li>
+                  <li>Desiging and building ISDN Video Conf clients and servers</li>
+                  <li>Providing pre and post sales client support</li>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+
+      
+
+   </section> <!-- Resume Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="https://www.linkedin.com/in/boris-levenzon"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/cloudboundboris"><i class="fa fa-github"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Thanks for looking  (c) 2021 Boris Levenzon</li>
+                
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
 </html>
