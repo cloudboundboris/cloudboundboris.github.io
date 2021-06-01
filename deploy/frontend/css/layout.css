@@ -31,7 +31,7 @@ body { background: #0f0f0f; }
 header {
    position: relative;
    height: 800px;
-   min-height: 500px;
+   min-height: 499px;
    width: 100%;
    background: #161415 url(../images/abstractbg.jpg) no-repeat top center;
    background-size: cover !important;
